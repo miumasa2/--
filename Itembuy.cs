@@ -15,23 +15,22 @@ public class Itembuy : MonoBehaviour
 
     public void IB()
     {
-        //ãƒ¡ã‚½ãƒƒãƒ‰ã®å‘¼ã³å‡ºã—
+        //ƒƒ\ƒbƒh‚ÌŒÄ‚Ño‚µ
         StartCoroutine("ib");
     }
 
     IEnumerator ib()
     {
         Text t = GameObject.Find("Canvas").transform.Find("Text2").GetComponent<Text>();
-        //é£›ã¶æ™‚ã®é…å»¶
+        //”ò‚Ô‚Ì’x‰„
         yield return new WaitForSeconds(0.0f);
-        //ãƒ†ã‚­ã‚¹ãƒˆå‹ã®å¤‰æ•°ã‚’è¨­å®š
+        //ƒeƒLƒXƒgŒ^‚Ì•Ï”‚ğİ’è
         if (SceneManager.GetActiveScene().name.Equals("Buyinfo1"))
-        { // Buyinfo1ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo1ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
 
             if (Test.money < 500)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -39,15 +38,14 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(0, ringo);
                 Test.money = Test.money - 500;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Buyinfo2"))
-        { // Buyinfo2ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo2ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
             if (Test.money < 1000)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -55,15 +53,14 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(1, cookie);
                 Test.money = Test.money - 1000;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Buyinfo3"))
-        { // Buyinfo3ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo3ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
             if (Test.money < 1500)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -71,15 +68,14 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(2, meet);
                 Test.money = Test.money - 1500;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Buyinfo4"))
-        { // Buyinfo4ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo4ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
             if (Test.money < 500)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -87,15 +83,14 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(3, power1);
                 Test.money = Test.money - 500;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Buyinfo5"))
-        { // Buyinfo5ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo5ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
             if (Test.money < 1000)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -103,15 +98,14 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(4, power2);
                 Test.money = Test.money - 1000;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
         else if (SceneManager.GetActiveScene().name.Equals("Buyinfo6"))
-        { // Buyinfo6ã‚·ãƒ¼ãƒ³ã§ã‚„ã‚ŠãŸã„å‡¦ç†
+        { // Buyinfo6ƒV[ƒ“‚Å‚â‚è‚½‚¢ˆ—
             if (Test.money < 1500)
             {
-                t.text = "ãŠé‡‘ãŒãŸã‚Šã¾ã›ã‚“ï¼ï¼";
-                FindObjectOfType<SoundManager>().PlaySeByName("ã‚¯ã‚¤ã‚ºä¸æ­£è§£1");
+                t.text = "‚¨‹à‚ª‚½‚è‚Ü‚¹‚ñII";
             }
             else
             {
@@ -119,7 +113,7 @@ public class Itembuy : MonoBehaviour
                 SaveManager.ItemSave(5, power3);
                 Test.money = Test.money - 1500;
                 SaveManager.MoneySave(Test.money);
-                FindObjectOfType<SoundManager>().PlaySeByName("ãƒ¬ã‚¸ã‚¹ã‚¿ãƒ¼ã§ç²¾ç®—");
+                t.text = "w“ü‚µ‚Ü‚µ‚½II";
             }
         }
     }
